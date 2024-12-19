@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+  max-width: 1200px !important;
+}
+a{
+  text-decoration: none;
+  color: #555555;
+}
+.pad-10{
+  padding: 10px 0;
+}.pad-20{ padding: 20px 0;}.pad-30{padding: 30px 0;}.pad-40{padding: 40px 0;}
+
+.bg-color{
+  background-color: #f3f4f7;
+  color: white;
+}
+.bg-prim{
+  background-color: #278c20;
+}
+
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+strong, p, h1, h2, h3, h4, h5, h6, p{
+  color: #555555;
+}
+
+.btn-success{
+  background-color: #278c20 !important;
+  /* background: linear-gradient(45deg, #4CAF50, #03A9F4) ; */
+}
+.bg-success{
+  background-color: #278c20 !important;
+}
+/* .text-success{
+  color: #278c20 !important;
+} */
+.xem-them a strong{
+  color: #f1f1e4 !important;
+}
+.text-dark{
+  color: #555555 !important;
+}
+.text-white{
+  color: #f1f1e4 !important;
+}
+
+
+
+/* header */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #fff, #fdf4f9);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #222;
+}
+
+.text-pink {
+  color: #ff80ab;
+}
+
+.btn-pink {
+  background-color: #ff80ab;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 30px;
+}
+
+.btn-outline-pink {
+  border: 2px solid #ff80ab;
+  color: #ff80ab;
+  border-radius: 30px;
+}
+
+.newly-added {
+  font-style: italic;
+  font-weight: bold;
+  color: #222;
+}
+
+
+/* main */
+.newly-added-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.arrow-icon {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ff80ab;
+  border-radius: 50%;
+}
+

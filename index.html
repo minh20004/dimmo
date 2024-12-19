@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimmo Interface</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="client/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">dimmo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dimmo AI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                </ul>
+                <button class="btn btn-outline-primary me-2">Add Your Company</button>
+                <button class="btn btn-primary">Sign In/Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-5 text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Watch SaaS demos <span class="text-pink">without</span> jumping into sales cycles</h1>
+            <div class="input-group mt-4 w-50 mx-auto">
+                <input type="text" class="form-control" placeholder="Account based marketing">
+                <button class="btn btn-pink">Search Demos</button>
+            </div>
+            <button class="btn btn-outline-pink mt-3">
+                <span class="icon">✨</span> Ask Dimmo to pick a solution for me
+            </button>
+        </div>
+    </header>
+
+    <section class="newly-added py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                <span class="newly-added-title">Newly Added</span>
+                <span class="arrow-icon text-pink">↘️</span>
+            </h2>
+            <div id="newlyAddedCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMUygo9tWkO2N4ONlsdVwk018mhT26rwQ8NhM021Nllr9Q%2Fthumbnail.jpg&w=1920&q=75" class="card-img-top" alt="Demo 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Oyster - Global Hiring Made Easy</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMUygo9tWkO2N4ONlsdVwk018mhT26rwQ8NhM021Nllr9Q%2Fthumbnail.jpg&w=1920&q=75" class="card-img-top" alt="Demo 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Org - Unveiling Team Dynamics</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMUygo9tWkO2N4ONlsdVwk018mhT26rwQ8NhM021Nllr9Q%2Fthumbnail.jpg&w=1920&q=75" class="card-img-top" alt="Demo 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">DealHub - Accelerate Revenue Growth</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMUygo9tWkO2N4ONlsdVwk018mhT26rwQ8NhM021Nllr9Q%2Fthumbnail.jpg&w=1920&q=75" class="card-img-top" alt="Demo 4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">AskElephant - Automates Workflows</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMUygo9tWkO2N4ONlsdVwk018mhT26rwQ8NhM021Nllr9Q%2Fthumbnail.jpg&w=1920&q=75" class="card-img-top" alt="Demo 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Another Demo - Example Title</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMUygo9tWkO2N4ONlsdVwk018mhT26rwQ8NhM021Nllr9Q%2Fthumbnail.jpg&w=1920&q=75" class="card-img-top" alt="Demo 6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Demo Solution 6</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#newlyAddedCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#newlyAddedCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p class="newly-added text-primary">Newly Added <span class="arrow">↘️</span></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var carousel = document.getElementById('newlyAddedCarousel');
+        var carouselInstance = new bootstrap.Carousel(carousel, {
+            interval: 3000, // 3 giây tự động chuyển slide
+            ride: 'carousel'
+        });
+    </script>
+    
+</body>
+</html>
