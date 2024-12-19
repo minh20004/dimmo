@@ -11,7 +11,8 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+     <section id="home">
+        <nav class="navbar header-top navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#" style="width: 100px;">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -150,27 +151,46 @@
                     <li class="nav-item"><a class="nav-link" href="#">Dimmo AI</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
                 </ul>
+                <!-- Button Tìm Kiếm -->
+<button class="btn-pink p-1 me-2" id="searchBtn">
+    <svg width="25" height="26" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6957 2.8335C19.9607 2.8335 25.0567 7.9295 25.0567 14.1945C25.0567 17.1503 23.9223 19.8462 22.0661 21.8694L25.7186 25.5143C26.0605 25.8561 26.0616 26.4091 25.7198 26.751C25.5495 26.9236 25.3243 27.0088 25.1003 27.0088C24.8775 27.0088 24.6535 26.9236 24.482 26.7533L20.7853 23.067C18.8407 24.6243 16.3751 25.5567 13.6957 25.5567C7.43066 25.5567 2.3335 20.4595 2.3335 14.1945C2.3335 7.9295 7.43066 2.8335 13.6957 2.8335ZM13.6957 4.5835C8.3955 4.5835 4.0835 8.89433 4.0835 14.1945C4.0835 19.4947 8.3955 23.8067 13.6957 23.8067C18.9947 23.8067 23.3067 19.4947 23.3067 14.1945C23.3067 8.89433 18.9947 4.5835 13.6957 4.5835Z" fill="#0B2462"></path>
+    </svg>
+</button>
+
+<!-- Form Tìm Kiếm -->
+<div id="searchForm" class="search-form-container hidden">
+    <div class="search-form-wrapper">
+        <form action="#" method="get" class="search-form">
+            <input type="text" placeholder="Search for companies..." class="search-input" required>
+            <button type="submit" class="search-submit">Search</button>
+            <button type="button" class="search-close" id="searchClose">×</button>
+        </form>
+    </div>
+</div>
+
                 <button class="btn btn-outline-pink me-2 btn-sm">Add Your Company</button>
                 <button class="btn btn-pink btn-sm">Sign In/Up</button>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="py-5 text-center">
-        <div class="container">
-            <h1 class="display-5 fw-bold">Watch SaaS demos <span class="text-pink">without</span> jumping into sales cycles</h1>
-            <div class="input-group mt-4 w-50 mx-auto">
-                <input type="text" class="form-control btn-serch-head" placeholder="Account based marketing">
-                <button class="btn btn-pink">Search Demos</button>
+         </nav>
+        
+        <!-- Hero Section -->
+        <header class="py-5 text-center">
+            <div class="container">
+                <h1 class="display-5 text-head">Watch SaaS demos <span class="text-pink">without</span> jumping into sales cycles</h1>
+                <div class="input-group mt-4 w-50 mx-auto">
+                    <input type="text" class="form-control btn-serch-head" placeholder="Account based marketing">
+                    <button class="btn btn-pink">Search Demos</button>
+                </div>
+                <button class="btn btn-outline-pink mt-3">
+                    <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.7332 11.0633L25.5853 10.45C23.6109 9.89 22.1034 8.37 21.5297 6.39667L20.9161 4.25C20.8227 3.91667 20.2624 3.91667 20.1556 4.25L19.542 6.39667C18.9817 8.37 17.4608 9.89 15.4864 10.45L13.3385 11.0633C13.1651 11.1167 13.0584 11.2633 13.0584 11.4367C13.0584 11.61 13.1784 11.77 13.3385 11.81L15.4864 12.4233C17.4608 12.9833 18.9683 14.5033 19.542 16.4767L20.1556 18.6233C20.209 18.7967 20.3557 18.9033 20.5292 18.9033C20.7026 18.9033 20.8627 18.7833 20.9027 18.6233L21.5164 16.4767C22.0767 14.5033 23.5976 12.9833 25.572 12.4233L27.7198 11.81C27.8933 11.7567 28 11.61 28 11.4367C28 11.2633 27.8799 11.1033 27.7198 11.0633H27.7332ZM17.274 22.0633L15.6465 21.5967C14.1523 21.17 13.005 20.0233 12.5781 18.53L12.1112 16.9033C12.0445 16.65 11.6176 16.65 11.5375 16.9033L11.0706 18.53C10.6437 20.0233 9.49638 21.17 8.00222 21.5967L6.37465 22.0633C6.24124 22.1033 6.16119 22.2233 6.16119 22.3433C6.16119 22.4633 6.25458 22.5967 6.37465 22.6233L8.00222 23.09C9.49638 23.5167 10.6437 24.6633 11.0706 26.1567L11.5375 27.7833C11.5775 27.9167 11.6843 27.9967 11.8177 27.9967C11.9511 27.9967 12.0711 27.9033 12.0978 27.7833L12.5648 26.1567C12.9917 24.6633 14.139 23.5167 15.6331 23.09L17.2607 22.6233C17.3941 22.5833 17.4742 22.4767 17.4742 22.3433C17.4742 22.21 17.3808 22.09 17.2607 22.0633H17.274ZM8.17565 13.9433L7.81545 12.6767H7.82879C7.49528 11.5167 6.60145 10.6233 5.4408 10.29L4.17343 9.93C4.0667 9.90333 4 9.81 4 9.70333C4 9.59667 4.08004 9.50333 4.17343 9.47667L5.4408 9.11667C6.60145 8.78333 7.49528 7.89 7.82879 6.73L8.189 5.46333C8.24236 5.26333 8.57588 5.26333 8.62924 5.46333L8.98944 6.73C9.32296 7.89 10.2168 8.78333 11.3774 9.11667L12.6448 9.47667C12.7515 9.50333 12.8182 9.59667 12.8182 9.70333C12.8182 9.81 12.7382 9.90333 12.6448 9.93L11.3774 10.29C10.2168 10.6233 9.32296 11.5167 8.98944 12.6767L8.62924 13.9433C8.60256 14.05 8.50917 14.1167 8.40245 14.1167C8.29572 14.1167 8.20234 14.0367 8.17565 13.9433Z" fill="#F49AC5"></path></svg></span> 
+                    Ask Dimmo to pick a solution for me 
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM17.5303 6.53033C17.8232 6.23744 17.8232 5.76256 17.5303 5.46967L12.7574 0.696699C12.4645 0.403806 11.9896 0.403806 11.6967 0.696699C11.4038 0.989593 11.4038 1.46447 11.6967 1.75736L15.9393 6L11.6967 10.2426C11.4038 10.5355 11.4038 11.0104 11.6967 11.3033C11.9896 11.5962 12.4645 11.5962 12.7574 11.3033L17.5303 6.53033ZM1 6.75H17V5.25H1V6.75Z" fill="#FF5FAB"></path></svg>
+                </button>
             </div>
-            <button class="btn btn-outline-pink mt-3">
-                <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.7332 11.0633L25.5853 10.45C23.6109 9.89 22.1034 8.37 21.5297 6.39667L20.9161 4.25C20.8227 3.91667 20.2624 3.91667 20.1556 4.25L19.542 6.39667C18.9817 8.37 17.4608 9.89 15.4864 10.45L13.3385 11.0633C13.1651 11.1167 13.0584 11.2633 13.0584 11.4367C13.0584 11.61 13.1784 11.77 13.3385 11.81L15.4864 12.4233C17.4608 12.9833 18.9683 14.5033 19.542 16.4767L20.1556 18.6233C20.209 18.7967 20.3557 18.9033 20.5292 18.9033C20.7026 18.9033 20.8627 18.7833 20.9027 18.6233L21.5164 16.4767C22.0767 14.5033 23.5976 12.9833 25.572 12.4233L27.7198 11.81C27.8933 11.7567 28 11.61 28 11.4367C28 11.2633 27.8799 11.1033 27.7198 11.0633H27.7332ZM17.274 22.0633L15.6465 21.5967C14.1523 21.17 13.005 20.0233 12.5781 18.53L12.1112 16.9033C12.0445 16.65 11.6176 16.65 11.5375 16.9033L11.0706 18.53C10.6437 20.0233 9.49638 21.17 8.00222 21.5967L6.37465 22.0633C6.24124 22.1033 6.16119 22.2233 6.16119 22.3433C6.16119 22.4633 6.25458 22.5967 6.37465 22.6233L8.00222 23.09C9.49638 23.5167 10.6437 24.6633 11.0706 26.1567L11.5375 27.7833C11.5775 27.9167 11.6843 27.9967 11.8177 27.9967C11.9511 27.9967 12.0711 27.9033 12.0978 27.7833L12.5648 26.1567C12.9917 24.6633 14.139 23.5167 15.6331 23.09L17.2607 22.6233C17.3941 22.5833 17.4742 22.4767 17.4742 22.3433C17.4742 22.21 17.3808 22.09 17.2607 22.0633H17.274ZM8.17565 13.9433L7.81545 12.6767H7.82879C7.49528 11.5167 6.60145 10.6233 5.4408 10.29L4.17343 9.93C4.0667 9.90333 4 9.81 4 9.70333C4 9.59667 4.08004 9.50333 4.17343 9.47667L5.4408 9.11667C6.60145 8.78333 7.49528 7.89 7.82879 6.73L8.189 5.46333C8.24236 5.26333 8.57588 5.26333 8.62924 5.46333L8.98944 6.73C9.32296 7.89 10.2168 8.78333 11.3774 9.11667L12.6448 9.47667C12.7515 9.50333 12.8182 9.59667 12.8182 9.70333C12.8182 9.81 12.7382 9.90333 12.6448 9.93L11.3774 10.29C10.2168 10.6233 9.32296 11.5167 8.98944 12.6767L8.62924 13.9433C8.60256 14.05 8.50917 14.1167 8.40245 14.1167C8.29572 14.1167 8.20234 14.0367 8.17565 13.9433Z" fill="#F49AC5"></path></svg></span> 
-                Ask Dimmo to pick a solution for me 
-                <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM17.5303 6.53033C17.8232 6.23744 17.8232 5.76256 17.5303 5.46967L12.7574 0.696699C12.4645 0.403806 11.9896 0.403806 11.6967 0.696699C11.4038 0.989593 11.4038 1.46447 11.6967 1.75736L15.9393 6L11.6967 10.2426C11.4038 10.5355 11.4038 11.0104 11.6967 11.3033C11.9896 11.5962 12.4645 11.5962 12.7574 11.3033L17.5303 6.53033ZM1 6.75H17V5.25H1V6.75Z" fill="#FF5FAB"></path></svg>
-            </button>
-        </div>
-    </header>
+        </header>
+    </section>
 
     <section class="newly-added py-3 bg-white">
         <h4 class="mb-1 container d-flex">
@@ -183,21 +203,21 @@
                     <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
                          class="card-img-top" alt="Demo 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
                     </div>
                 </div>                               
                 <div class="card overlay-card">
                     <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
                          class="card-img-top" alt="Demo 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
                     </div>
                 </div> 
                 <div class="card overlay-card">
                     <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
                          class="card-img-top" alt="Demo 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
                     </div>
                 </div> 
                 <!-- Lặp lại để liền mạch -->
@@ -205,26 +225,28 @@
                     <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
                          class="card-img-top" alt="Demo 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
                     </div>
                 </div> 
                 <div class="card overlay-card">
                     <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
                          class="card-img-top" alt="Demo 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
                     </div>
                 </div> 
                 <div class="card overlay-card">
                     <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
                          class="card-img-top" alt="Demo 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card 1</h5>
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
                     </div>
                 </div> 
             </div>
         </div>
     </section>
+    
+    
     
     
     
@@ -245,5 +267,23 @@
         });
     </script>
     
+    <script>
+// Lấy các phần tử
+const searchBtn = document.getElementById('searchBtn');
+const searchForm = document.getElementById('searchForm');
+const searchClose = document.getElementById('searchClose');
+
+// Mở form tìm kiếm khi click vào button
+searchBtn.addEventListener('click', () => {
+    searchForm.classList.toggle('hidden'); // Hiển thị form tìm kiếm
+});
+
+// Đóng form khi click vào dấu '×'
+searchClose.addEventListener('click', () => {
+    searchForm.classList.add('hidden'); // Ẩn form tìm kiếm
+});
+
+    </script>
+
 </body>
 </html>
