@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dimmo Interface</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon or logo icon -->
+    <link rel="icon" href="client/img/apple-touch-icon (1).webp" type="image/png">
+
+    <link rel="stylesheet" href="client/lib/bootstrap.min.css">
+    <script src="client/lib/bootstrap.bundle.min.js"></script>
+    <script src="client/lib/font-fontawesome-ae333ffef2.js"></script>
+    <script src="client/js/js.js"></script>
+    <script src="client/js/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="client/css/style.css">
+    <script src="client/js/js.js"></script>
+    <link rel="stylesheet" href="client/css/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- Navbar -->
-     <section id="home">
-        <nav class="navbar header-top navbar-expand-lg navbar-light">
+    <nav class="navbar header-top navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#" style="width: 100px;">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -152,30 +159,30 @@
                     <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
                 </ul>
                 <!-- Button Tìm Kiếm -->
-<button class="btn-pink p-1 me-2" id="searchBtn">
-    <svg width="25" height="26" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6957 2.8335C19.9607 2.8335 25.0567 7.9295 25.0567 14.1945C25.0567 17.1503 23.9223 19.8462 22.0661 21.8694L25.7186 25.5143C26.0605 25.8561 26.0616 26.4091 25.7198 26.751C25.5495 26.9236 25.3243 27.0088 25.1003 27.0088C24.8775 27.0088 24.6535 26.9236 24.482 26.7533L20.7853 23.067C18.8407 24.6243 16.3751 25.5567 13.6957 25.5567C7.43066 25.5567 2.3335 20.4595 2.3335 14.1945C2.3335 7.9295 7.43066 2.8335 13.6957 2.8335ZM13.6957 4.5835C8.3955 4.5835 4.0835 8.89433 4.0835 14.1945C4.0835 19.4947 8.3955 23.8067 13.6957 23.8067C18.9947 23.8067 23.3067 19.4947 23.3067 14.1945C23.3067 8.89433 18.9947 4.5835 13.6957 4.5835Z" fill="#0B2462"></path>
-    </svg>
-</button>
+                <button class="btn-pink p-1 me-2" id="searchBtn">
+                    <svg width="25" height="26" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6957 2.8335C19.9607 2.8335 25.0567 7.9295 25.0567 14.1945C25.0567 17.1503 23.9223 19.8462 22.0661 21.8694L25.7186 25.5143C26.0605 25.8561 26.0616 26.4091 25.7198 26.751C25.5495 26.9236 25.3243 27.0088 25.1003 27.0088C24.8775 27.0088 24.6535 26.9236 24.482 26.7533L20.7853 23.067C18.8407 24.6243 16.3751 25.5567 13.6957 25.5567C7.43066 25.5567 2.3335 20.4595 2.3335 14.1945C2.3335 7.9295 7.43066 2.8335 13.6957 2.8335ZM13.6957 4.5835C8.3955 4.5835 4.0835 8.89433 4.0835 14.1945C4.0835 19.4947 8.3955 23.8067 13.6957 23.8067C18.9947 23.8067 23.3067 19.4947 23.3067 14.1945C23.3067 8.89433 18.9947 4.5835 13.6957 4.5835Z" fill="#0B2462"></path>
+                    </svg>
+                </button>
 
-<!-- Form Tìm Kiếm -->
-<div id="searchForm" class="search-form-container hidden">
-    <div class="search-form-wrapper">
-        <form action="#" method="get" class="search-form">
-            <input type="text" placeholder="Search for companies..." class="search-input" required>
-            <button type="submit" class="search-submit">Search</button>
-            <button type="button" class="search-close" id="searchClose">×</button>
-        </form>
-    </div>
-</div>
+                <!-- Form Tìm Kiếm -->
+                <div id="searchForm" class="search-form-container hidden">
+                    <div class="search-form-wrapper">
+                        <form action="#" method="get" class="search-form">
+                            <input type="text" placeholder="Search for companies..." class="search-input" required>
+                            <button type="submit" class="search-submit">Search</button>
+                            <button type="button" class="search-close" id="searchClose">×</button>
+                        </form>
+                    </div>
+                </div>
 
                 <button class="btn btn-outline-pink me-2 btn-sm">Add Your Company</button>
                 <button class="btn btn-pink btn-sm">Sign In/Up</button>
             </div>
         </div>
-         </nav>
-        
-        <!-- Hero Section -->
+    </nav>
+    
+     <section id="home">
         <header class="py-5 text-center">
             <div class="container">
                 <h1 class="display-5 text-head">Watch SaaS demos <span class="text-pink">without</span> jumping into sales cycles</h1>
@@ -192,6 +199,7 @@
         </header>
     </section>
 
+    <!-- slide = -->
     <section class="newly-added py-3 bg-white">
         <h4 class="mb-1 container d-flex">
             <p class="text-base sm:text-2xl shadows-into-light-two shadows-into-light-two-regular">Newly Added</p>
@@ -246,7 +254,120 @@
         </div>
     </section>
     
-    
+    <!-- Featured Demos -->
+    <section class="Featured py-5">
+        <div class="container text-center">
+            <img src="client/img/apple-touch-icon (1).webp" alt="">
+            <h2 class="mb-3 fw-bold">Featured Demos</h2>
+            
+            <!-- Tab buttons -->
+            <ul class="nav nav-pills justify-content-center mb-4 " id="demo-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" id="all-tab" data-bs-toggle="pill" href="#all">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="marketing-tab" data-bs-toggle="pill" href="#marketing">Marketing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="sales-tab" data-bs-toggle="pill" href="#sales">Sales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="customer-success-tab" data-bs-toggle="pill" href="#customer-success">Customer Success</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="revops-tab" data-bs-toggle="pill" href="#revops">RevOps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="cybersecurity-tab" data-bs-toggle="pill" href="#cybersecurity">Cybersecurity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="hr-tab" data-bs-toggle="pill" href="#hr">Human Resources</a>
+                </li>
+            </ul>
+
+            <!-- Tab content -->
+            <div class="tab-content" id="demo-tabs-content">
+                <!-- All -->
+                <div class="tab-pane fade show active" id="all">
+                    <div class="row">
+                        <div class="col-md-4 filter-item Marketing">
+                            <div class="card rounded-4 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    <span class="badge bg-secondary">Marketing</span>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 filter-item Marketing">
+                            <div class="card rounded-4 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    <span class="badge bg-secondary">Marketing</span>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Marketing -->
+                <div class="tab-pane fade" id="marketing">
+                    <div class="row gy-4">
+                        <div class="col-md-4 filter-item">
+                            <div class="card rounded-4 shadow-sm">
+                                <div class="card-body text-center">
+                                    <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    <h5 class="card-title">6sense</h5>
+                                    <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                                    <span class="badge bg-secondary">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales -->
+                <div class="tab-pane fade" id="sales">
+                    <div class="row gy-4">
+                        <!-- Add demo items for Sales category here -->
+                    </div>
+                </div>
+
+                <!-- Customer Success -->
+                <div class="tab-pane fade" id="customer-success">
+                    <div class="row gy-4">
+                        <!-- Add demo items for Customer Success category here -->
+                    </div>
+                </div>
+
+                <!-- RevOps -->
+                <div class="tab-pane fade" id="revops">
+                    <div class="row gy-4">
+                        <!-- Add demo items for RevOps category here -->
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="tab-pane fade" id="cybersecurity">
+                    <div class="row gy-4">
+                        <!-- Add demo items for Cybersecurity category here -->
+                    </div>
+                </div>
+
+                <!-- Human Resources -->
+                <div class="tab-pane fade" id="hr">
+                    <div class="row gy-4">
+                        <!-- Add demo items for HR category here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
     
     
     
@@ -262,27 +383,26 @@
     <script>
         var carousel = document.getElementById('newlyAddedCarousel');
         var carouselInstance = new bootstrap.Carousel(carousel, {
-            interval: 3000, // 3 giây tự động chuyển slide
+            interval: 3000,
             ride: 'carousel'
         });
     </script>
     
     <script>
-// Lấy các phần tử
-const searchBtn = document.getElementById('searchBtn');
-const searchForm = document.getElementById('searchForm');
-const searchClose = document.getElementById('searchClose');
+        // Lấy các phần tử
+        const searchBtn = document.getElementById('searchBtn');
+        const searchForm = document.getElementById('searchForm');
+        const searchClose = document.getElementById('searchClose');
 
-// Mở form tìm kiếm khi click vào button
-searchBtn.addEventListener('click', () => {
-    searchForm.classList.toggle('hidden'); // Hiển thị form tìm kiếm
-});
+        // Mở form tìm kiếm khi click vào button
+        searchBtn.addEventListener('click', () => {
+            searchForm.classList.toggle('hidden');
+        });
 
-// Đóng form khi click vào dấu '×'
-searchClose.addEventListener('click', () => {
-    searchForm.classList.add('hidden'); // Ẩn form tìm kiếm
-});
-
+        // Đóng form khi click vào dấu '×'
+        searchClose.addEventListener('click', () => {
+            searchForm.classList.add('hidden');
+        });
     </script>
 
 </body>
