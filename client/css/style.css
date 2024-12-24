@@ -371,6 +371,10 @@ body {
   background-color: #fee4ef;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.Featured-blog{
+  background-color: unset !important;
+  box-shadow: unset;
+}
 .Featured h2{
   color: #000;
 }
