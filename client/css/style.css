@@ -1167,3 +1167,230 @@ font-size: 16px;
     margin-top: 30px;
   }
 }
+
+/* product - detail */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+.btn-custom {
+  background-color: #ffc0cb;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.btn-outline-custom {
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.product-card {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+}
+.badge-custom {
+  background-color: #f8f9fa;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.related-products .view-all {
+  text-align: right;
+  font-size: 14px;
+  color: #ffc0cb;
+}
+
+/* product-detai */
+.product-detail h2{
+  color: #000;
+}
+.product-detail .nav .nav-link{
+  color: #000;
+  border: 1px solid #1a1a1a;
+  margin-left: 10px;
+}
+.product-detail .nav-pills .nav-link.active {
+  background-color: #0b2462;
+  color: white;
+}
+
+.product-detail .card {
+  border: none;
+}
+
+.product-detail .card-tab .badge {
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.product-detail .card-tab img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-detail .card-tab {
+  background-color: #ffffff;
+  border: 2px solid #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* aspect-ratio: 1 / 1; */
+  aspect-ratio: 4 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.product-detail .card-tab-01 {
+  background-color: #ffffff;
+  border: 2px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* aspect-ratio: 1 / 1; */
+  aspect-ratio: 3 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.product-detail .Marketing{
+  text-align: left;
+  margin-bottom: 30px;
+}
+.product-detail .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail .card-tab img {
+  object-fit: contain;
+}
+.product-detail .card-tab img:hover {
+  transform: scale(1.3); 
+  transition: transform 0.3s ease;
+}
+
+.product-detail .badge {
+  margin-top: auto;
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  color: #333333;
+  font-size: 14px;
+  border-radius: 30px !important;
+  padding: 10px 10px !important;
+  margin: 10px;
+}
+
+.product-detail .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.product-detail .card-text {
+  font-size: 14px;
+  color: #666666;
+}
+
+.product-detail .row {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+/* video */
+.video-container {
+  width: 80%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.video-btn {
+  position: relative;
+  width: 130px;
+  height: 100px;
+  border: 5px solid #ffc0cb;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 1.5s infinite;
+}
+.video-btn::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #ffc0cb;
+  border-radius: 50%;
+  animation: pulse-ring 1.5s infinite;
+}
+.video-icon {
+  font-size: 36px;
+  color: #ffc0cb;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #demo-tabs {
+    justify-content: unset;
+  }
+  .product-detail .Marketing {
+    padding: 0 110px;
+  }
+  .product-detail .card-tab-01 {
+    aspect-ratio: 1 / 1;
+  }
+}
+@media (max-width: 655px) {
+  .product-detail .Marketing {
+    padding: 0 90px;
+  }
+}
+@media (max-width: 563px) {
+  .product-detail .Marketing {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 500px) {
+  .product-detail .Marketing {
+    padding: 0 10px;
+  }
+}
