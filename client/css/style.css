@@ -104,11 +104,16 @@ body {
   border: none;
   border-radius: 30px;
 }
-
+.bg-pink{
+  background-color: #fee4ef;
+}
 .btn-outline-pink {
   border: 2px solid #ff80ab;
   color: #ff80ab;
   border-radius: 30px;
+}
+.btn-outline-pink:hover {
+  border: 2px solid #ff80ab;
 }
 .btn-serch-head{
   border-radius: 30px;
@@ -128,6 +133,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px 0px 100px 0;
 }
 
 
@@ -146,9 +152,9 @@ body {
 
 /* Form Tìm Kiếm */
 .search-form-container {
-  display: none; /* Ẩn form tìm kiếm mặc định */
-  width: 100%; /* Đặt chiều rộng bằng với container */
-  margin-top: 10px; /* Khoảng cách từ button */
+  display: none; 
+  width: 100%;
+  margin-top: 10px;
 }
 
 .search-form-wrapper {
@@ -293,3 +299,79 @@ body {
 .sm\:text-\[16px\] {
   font-size: 16px;
 }
+
+/* Featured */
+.Featured {
+  background-color: #fefafc;
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Featured .nav .nav-link{
+  color: #000;
+}
+.nav-pills .nav-link.active {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.card {
+  border: none;
+}
+
+.card .badge {
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.card img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.card {
+  background-color: #ffffff; /* Màu nền card */
+  border: 1px solid #e6e6e6; /* Đường viền nhạt */
+  border-radius: 20px; /* Bo góc card */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  overflow: hidden;
+  text-align: center; /* Canh giữa nội dung */
+  padding: 20px; /* Khoảng cách trong card */
+}
+
+.card-body {
+  padding-bottom: 20px; /* Khoảng cách giữa nội dung chính và tiêu đề */
+}
+
+.card img {
+  max-height: 80px;
+  margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
+}
+
+.badge {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #e6e6e6; /* Màu nền badge */
+  color: #000000; /* Màu chữ badge */
+  margin-bottom: 15px; /* Khoảng cách dưới badge */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666666; /* Màu chữ mô tả */
+}
+
+
+
+
+
