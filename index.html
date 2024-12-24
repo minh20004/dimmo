@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#" style="width: 100px;">
+                <a class="navbar-brand" href="index.html" style="width: 100px;">
                     <img src="client/img/logo-text-blue.svg" alt="Logo">
                 </a>
                 
@@ -69,7 +69,7 @@
                                     <li class="dropdown-item"><a href="#">Sales 3</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="prising.html">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Dimmo AI</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
                         </ul>
@@ -547,12 +547,16 @@
         </div>
     </footer>
 
-    <!-- <script>
-      var carousel = document.getElementById('newlyAddedCarousel');
-        var carouselInstance = new bootstrap.Carousel(carousel, {
-            interval: 3000,
-            ride: 'carousel'
+    <script>
+        document.querySelectorAll('.toggle-option').forEach(option => {
+            option.addEventListener('click', () => {
+                // Remove 'selected' class from all options
+                document.querySelectorAll('.toggle-option').forEach(opt => opt.classList.remove('selected'));
+                
+                // Add 'selected' class to the clicked option
+                option.classList.add('selected');
+            });
         });
-    </script> -->
+    </script>
 </body>
 </html>

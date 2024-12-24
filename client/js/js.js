@@ -23,3 +23,35 @@ document.addEventListener("DOMContentLoaded", function () {
         searchForm.classList.add("d-none");
     });
 });
+
+
+// pricing
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    const questions = document.querySelectorAll(".question");
+
+    questions.forEach((question) => {
+        
+        const plus = question.querySelector(".plus");
+        const answer = question.querySelector(".answer");
+
+       
+        answer.style.display = "none";
+
+        
+        plus.style.cursor = "pointer";
+
+        
+        plus.addEventListener("click", () => {
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+                plus.textContent = "-";
+            } else {
+                answer.style.display = "none";
+                plus.textContent = "+";
+            }
+        });
+    });
+});

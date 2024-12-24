@@ -818,3 +818,352 @@ body {
     text-align: center !important;
   }
 }
+
+ /* vinh */
+  
+ #title{
+  font-size: 60px;
+  color: #000;
+  text-align: center;
+}
+.toggle-container{
+  display: flex;
+  background-color: #fed7e7;
+  width: 200px;
+  border-radius: 24px;
+  padding: 5px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.toggle-option{
+  flex: 1;
+  color: #0b2462;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer; 
+
+}
+.toggle-option.selected {
+  background-color: #001a57;
+  color: white; 
+}
+.font-family p{
+font-size: 20px;
+font-family: "Shadows Into Light Two", cursive;
+color: #000;
+}
+.save {
+position: absolute;
+right: 400px; 
+transform: translateY(-50%); 
+display: flex;
+align-items: center;
+}
+@media (max-width: 768px) {
+.save {
+  right: 10px; /* Điều chỉnh thêm cho màn hình nhỏ hơn */
+  transform: translateY(-50%);
+}
+}
+
+@media (max-width: 480px) {
+.save {
+  position: static; /* Có thể đổi sang position static để dễ căn chỉnh */
+  margin: 0 auto; /* Canh giữa nếu cần */
+  justify-content: center;
+}
+}
+
+
+.plan-pricing{
+background-color: rgb(237, 243, 249);
+border-radius: 28px;
+padding-bottom: 40px;
+}
+
+
+.plan-free{
+border-radius: 28px;
+background-color: rgb(237, 243, 249);
+height: 100%;
+padding: 20px;
+}
+.plan-free img{
+margin-top: 20px;
+margin-left: 10px;
+margin-bottom: 20px;
+}
+.plan-free h3{
+color: #000;
+font-weight: bold;
+}
+
+.plan-free ul li{
+color: rgb(102, 109, 128);
+}
+
+.plan-starter{
+border: 1px solid #f3d8e3;
+border-radius: 15px;
+background-color: rgb(254, 228, 239); 
+height: 110%;
+margin-top: -40px;
+padding: 0 20px;
+
+}
+.plan-starter h3{
+color: #000;
+font-weight: bold;
+}
+.plan-starter img{
+margin-top: 20px;
+margin-left: 10px;
+margin-bottom: 20px;
+}
+.plan-starter .subtitle{
+color: #000;
+}
+.description{
+color: #000;
+}
+
+
+.plan-starter  ul{
+list-style-type: none;
+}
+.plan-free ul{
+list-style-type: none;
+}
+.plan-enterprise ul{
+list-style-type: none;
+}
+.plan-enterprise{
+border-radius: 28px;
+background-color: rgb(237, 243, 249);
+height: 100%;
+padding: 0 20px;
+}
+.plan-enterprise img{
+margin-top: 20px;
+margin-left: 10px;
+padding-bottom: 20px;
+}
+.plan-enterprise ul li{
+color: rgb(102, 109, 128);
+}
+.subtitle{
+color: #fba7cb;
+font-size: 17px;
+}
+.border-bot{
+border: 1px dotted #000;
+width: 300px;
+}
+.price{
+font-size: 40px;
+color: #000;
+font-weight: bold;
+}
+.buy_button {
+background-color: rgb(252, 167, 203);
+color: #000;
+border: none;
+border-radius: 25px;
+padding: 10px 15px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+text-align: center;
+width: 90%;
+}
+#button-starter{
+background-color:rgb(11, 36, 98);
+color: white;
+border: none;
+border-radius: 25px;
+padding: 10px 15px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+text-align: center;
+width: 90%;
+}
+#button-starter:hover{
+background-color: rgb(254, 228, 239);
+border: 1px solid rgb(11, 36, 98);
+color: rgb(11, 36, 98);
+}
+.buy_button:hover{
+background-color: white;
+
+}
+
+
+
+.faq-board{
+background-color: #f9eaf0;
+border-radius: 25px;
+height: 342px;
+/* margin-left: 10px;
+margin-top: 30px; */
+overflow: hidden;
+}
+.faq-board p{
+margin-left: 30px;
+padding-top: 30px;
+color: rgb(11, 36, 98);
+font-size: 21px;
+
+}
+.faq-board img{
+width: 150px;
+margin-left: 300px;
+object-fit: contain;
+}
+
+
+.faq-questions {
+display: flex;
+font-size: 20px;
+flex-direction: column;
+font-family: Satoshi, sans-serif;
+margin-top: 40px;
+padding-left: 60px;
+}
+
+.question {
+border-bottom: 1px solid rgb(229, 231, 235); 
+align-items: flex-start; 
+margin-bottom: 10px;
+width: 90%;
+padding: 20px;
+justify-content: space-between;
+position: relative;
+}
+
+.question span {
+margin-right: 10px;
+}
+
+.plus {
+font-size: 30px;
+cursor: pointer;
+position: absolute;
+right: 0;
+}
+
+.answer {
+font-size: 17px;
+margin-top: 10px;
+margin-bottom: 10px;
+color: #666d80;
+}
+.badge{
+padding: 15px;
+border-radius: 50%;
+background-color: #e1d6e2;
+color: #001a57;
+}
+
+/* main */
+.join .shadows-into-light-two-regular {
+  font-family: Shadows Into Light Two, cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.join {
+overflow: hidden;
+position: relative;
+margin-top: 40px;
+/* height: 180px; */
+padding: 50px 0 !important;
+}
+
+.join .carousel-wrapper {
+position: relative;
+width: 100%;
+height: auto;
+}
+
+.join .carousel-content {
+display: flex;
+gap: 2rem;
+animation: slide 20s linear infinite;
+}
+
+.join .card {
+flex: 0 0 auto;
+border: none;
+background-color: unset;
+}
+
+.join .card-img-top {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.join .card-body {
+padding: 10px;
+}
+@keyframes slide {
+from {
+    transform: translateX(0%);
+}
+to {
+    transform: translateX(-50%);
+}
+}
+
+.join .carousel-content {
+min-width: calc(300px * 6 + 5rem);
+}
+
+.join .overlay-card {
+position: relative;
+overflow: hidden;
+
+}
+.join .overlay-card {
+  position: relative;
+  width: unset;
+  height: unset;
+  overflow: hidden;
+  border-radius: unset;
+  box-shadow: unset;
+}
+.join .overlay-card img {
+width: auto;
+height: auto;
+object-fit: contain;
+}
+
+.join .overlay-card .card-body {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: linear-gradient(0deg, rgb(0, 7, 25) -10%, rgba(0, 7, 25, 0) 90%);
+color: #fff;
+transform: translateY(0);
+}
+.sm\:text-\[16px\] {
+font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .plan-starter {
+    border: 1px solid #f3d8e3;
+    border-radius: 15px;
+    background-color: rgb(254, 228, 239);
+    height: 110%;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  .plan-enterprise{
+    margin-top: 30px;
+  }
+}
