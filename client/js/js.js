@@ -55,3 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// category
+document.getElementById('filterButton').addEventListener('click', function () {
+    var offcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasExample'));
+    offcanvas.show(); 
+});

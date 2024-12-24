@@ -1477,3 +1477,152 @@ font-size: 16px;
     flex: 100%;
   }
 }
+
+  /* Category */
+  .heading-bav-top .heading-home {
+    color: #999eaa;
+}
+
+.container-child {
+position: relative;
+}
+
+.container .icon-search {
+position: absolute;
+top: 15px;
+left: 17px;
+color: #9ca3af;
+padding-left: 10px;
+}
+
+.container .form-controls {
+padding: 10px 10px 10px 44px ;
+width: 85%;
+border-top-left-radius: 8px !important;
+border-bottom-left-radius: 8px !important;
+border: 2px solid #f9a8d4;
+outline: none;
+}
+
+.container .btn-search {
+height: 47px;
+background-color: #f9a8d4;
+border: none;
+border-top-right-radius: 8px !important;
+border-bottom-right-radius: 8px !important;
+color: rgb(11 36 98 / var(--tw-text-opacity));
+padding: 0 8px;
+}
+
+/* Category */
+
+.card-product {
+height: 230px;
+background-color: #fff;
+border: 1px solid #000; 
+border-radius: 14px;
+}
+
+.image{
+object-fit: cover; 
+transition: transform 0.3s ease; 
+}
+
+.image-container {
+overflow: hidden;
+}
+
+.icon-filter {
+margin-right: 4px;
+}
+
+.image-container:hover .image {
+transform: scale(1.2);
+}
+.scroll-mobi {
+  max-height: 100%;
+  max-width: 100%;
+  overflow: auto;
+}
+@media  (max-width: 766px) {
+  .container .icon-search {
+  left: 37px;
+  }
+  .row{
+  overflow: hidden;
+  } 
+
+  .category-heading {
+  width: 80%;
+  position: absolute;
+  top: 45%;
+  left: 12%;
+  background-color: #fff;
+  border: 1px solid #000 ;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .category-child {
+  height: 30px;
+  }
+
+  .p-t {
+  padding: 0 !important;
+  }
+
+  .text-category{
+  display: none;
+  }
+
+  .category-filters {
+  display: none;
+  }
+
+  .category-dimmo {
+  margin-top: 5px;
+  }
+
+  .category-filters.active{
+  display: flex;
+  }
+
+  .category-manager{
+  display: none;
+  }
+
+}
+@media  (max-width: 566px) {
+.container .icon-search {
+left: 17px;
+}
+}
+.accordion-button:focus{
+background-color: #fca7cb;
+box-shadow: none;
+}
+
+.text-lg {
+color: #787e8e;
+font-size: 16px;
+font-weight: 400;
+}
+
+.w-full {
+width: 100%;
+}
+
+.p-t {
+padding: 10px;
+}
+
+#home-category {
+background-image: 
+ linear-gradient(rgba(255, 246, 250, 1) 0%, rgba(255, 246, 250, 0) 100%), 
+ url(../../client/img/BG.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
