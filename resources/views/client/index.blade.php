@@ -8,7 +8,6 @@
         <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body d-flex">
-            <!-- Left section -->
             <div class="popup-left col-md-6">
                 <img src="client/img/apple-touch-icon (1).webp" class="logo" alt="">
                 <p>250+ Verified Products</p>
