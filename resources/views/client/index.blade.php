@@ -1,0 +1,462 @@
+@extends('client.layout.master')
+@section('title')
+    Dimmo
+@endsection
+@section('content')
+    <!-- Modal add your company-->
+    <div class="modal fade modal-sign" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body d-flex">
+            <!-- Left section -->
+            <div class="popup-left col-md-6">
+                <img src="client/img/apple-touch-icon (1).webp" class="logo" alt="">
+                <p>250+ Verified Products</p>
+                <p>Thousands of Active Users</p>
+                <p>New Demos Added Daily</p>
+                <p>Boost your company's visibility</p>
+                <div class="list-img">
+                    <img src="client/img/6sense.png" alt="Logos">
+                    <img src="client/img/6sense.png" alt="Logos">
+                    <img src="client/img/6sense.png" alt="Logos">
+                    <img src="client/img/6sense.png" alt="Logos">
+                    <img src="client/img/6sense.png" alt="Logos">
+                </div>
+            </div>
+            <!-- Right section -->
+            <div class="popup-right col-md-6">
+                <h3 class="mb-3">Company Registration</h3>
+                <p>Register your product on Dimmo and get visibility up to <b>50,000 users</b> per month.</p>
+                <form>
+                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="Last Name">
+                <input type="email" class="form-control" placeholder="Company Email">
+                <input type="text" class="form-control" placeholder="Company Name">
+                <button type="submit" class="btn btn-primary">Get Listed</button>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal sign-in-->
+    <div class="modal fade modal-sign" id="exampleModalSignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body d-flex">
+            <!-- Left section -->
+            <div class="popup-left col-md-6">
+                <img src="client/img/apple-touch-icon (1).webp" class="logo" alt="">
+                <p>250+ Verified Products</p>
+                <p>Thousands of Active Users</p>
+                <p>New Demos Added Daily</p>
+                <p>Boost your company's visibility</p>
+                <div class="list-img">
+                    <img src="client/img/6sense.png" alt="Logos">
+                    <img src="client/img/6sense.png" alt="Logos">
+                    <img src="client/img/6sense.png" alt="Logos">
+                    <img src="client/img/6sense.png" alt="Logos">
+                    <img src="client/img/6sense.png" alt="Logos">
+                </div>
+            </div>
+            <!-- Right section -->
+            <div class="popup-right col-md-6">
+                <h3 class="mb-3">Log in</h3>
+                <p>Welcome Back to Dimmo! Please Log In to Your Account.</p>
+                <form>
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" placeholder="">
+                    <div class="mt-4">
+                        <button class="d-flex align-items-center btn btn-primary w-100" type="button">
+                            <i class="fa-regular fa-envelope me-3"></i>
+                            <span class="text-center w-full">Send login link to Email</span>
+                        </button>
+                    </div>
+                    <div class="mt-4">
+                        <button class="d-flex align-items-center btn btn-outline-dark w-100" type="button">
+                            <svg style="width: 20px;" class="h-5 w-5 mr-2 me-3" xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 0 48 48" version="1.1"><g fill="none" fill-rule="evenodd"><g transform="translate(401.000000, 860.000000)"><g transform="translate(-401.000000, -860.000000)">
+                                <path d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24" fill="#4285F4"></path>
+                                <path d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333" fill="#34A853"></path>
+                                <path d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667" fill="#FBBC05"></path>
+                                <path d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24" fill="#EA4335"></path></g></g></g>
+                            </svg>
+                                <span class="text-center w-full">Sign in with Google</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- header -->
+     <section id="home">
+        <header class="py-5 text-center">
+            <div class="container">
+                <h1 class="display-5 text-head">Watch SaaS demos <span class="text-pink">without</span> <br> jumping into sales cycles</h1>
+                <div class="input-group mt-4 mx-auto search-demo">
+                    <input type="text" class="form-control btn-serch-head" placeholder="Account based marketing">
+                    <button class="btn btn-pink">Search Demos</button>
+                </div>
+                <button class="btn btn-outline-pink mt-3">
+                    <span class="icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M27.7332 11.0633L25.5853 10.45C23.6109 9.89 22.1034 8.37 21.5297 6.39667L20.9161 4.25C20.8227 3.91667 20.2624 3.91667 20.1556 4.25L19.542 6.39667C18.9817 8.37 17.4608 9.89 15.4864 10.45L13.3385 11.0633C13.1651 11.1167 13.0584 11.2633 13.0584 11.4367C13.0584 11.61 13.1784 11.77 13.3385 11.81L15.4864 12.4233C17.4608 12.9833 18.9683 14.5033 19.542 16.4767L20.1556 18.6233C20.209 18.7967 20.3557 18.9033 20.5292 18.9033C20.7026 18.9033 20.8627 18.7833 20.9027 18.6233L21.5164 16.4767C22.0767 14.5033 23.5976 12.9833 25.572 12.4233L27.7198 11.81C27.8933 11.7567 28 11.61 28 11.4367C28 11.2633 27.8799 11.1033 27.7198 11.0633H27.7332ZM17.274 22.0633L15.6465 21.5967C14.1523 21.17 13.005 20.0233 12.5781 18.53L12.1112 16.9033C12.0445 16.65 11.6176 16.65 11.5375 16.9033L11.0706 18.53C10.6437 20.0233 9.49638 21.17 8.00222 21.5967L6.37465 22.0633C6.24124 22.1033 6.16119 22.2233 6.16119 22.3433C6.16119 22.4633 6.25458 22.5967 6.37465 22.6233L8.00222 23.09C9.49638 23.5167 10.6437 24.6633 11.0706 26.1567L11.5375 27.7833C11.5775 27.9167 11.6843 27.9967 11.8177 27.9967C11.9511 27.9967 12.0711 27.9033 12.0978 27.7833L12.5648 26.1567C12.9917 24.6633 14.139 23.5167 15.6331 23.09L17.2607 22.6233C17.3941 22.5833 17.4742 22.4767 17.4742 22.3433C17.4742 22.21 17.3808 22.09 17.2607 22.0633H17.274ZM8.17565 13.9433L7.81545 12.6767H7.82879C7.49528 11.5167 6.60145 10.6233 5.4408 10.29L4.17343 9.93C4.0667 9.90333 4 9.81 4 9.70333C4 9.59667 4.08004 9.50333 4.17343 9.47667L5.4408 9.11667C6.60145 8.78333 7.49528 7.89 7.82879 6.73L8.189 5.46333C8.24236 5.26333 8.57588 5.26333 8.62924 5.46333L8.98944 6.73C9.32296 7.89 10.2168 8.78333 11.3774 9.11667L12.6448 9.47667C12.7515 9.50333 12.8182 9.59667 12.8182 9.70333C12.8182 9.81 12.7382 9.90333 12.6448 9.93L11.3774 10.29C10.2168 10.6233 9.32296 11.5167 8.98944 12.6767L8.62924 13.9433C8.60256 14.05 8.50917 14.1167 8.40245 14.1167C8.29572 14.1167 8.20234 14.0367 8.17565 13.9433Z" fill="#F49AC5"></path></svg></span> 
+                    Ask Dimmo to pick a solution for me 
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M1 5.25C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75V5.25ZM17.5303 6.53033C17.8232 6.23744 17.8232 5.76256 17.5303 5.46967L12.7574 0.696699C12.4645 0.403806 11.9896 0.403806 11.6967 0.696699C11.4038 0.989593 11.4038 1.46447 11.6967 1.75736L15.9393 6L11.6967 10.2426C11.4038 10.5355 11.4038 11.0104 11.6967 11.3033C11.9896 11.5962 12.4645 11.5962 12.7574 11.3033L17.5303 6.53033ZM1 6.75H17V5.25H1V6.75Z" fill="#FF5FAB"></path></svg>
+                </button>
+            </div>
+        </header>
+    </section>
+
+    <!-- slide = -->
+    <section class="newly-added py-3 bg-white">
+        <h4 class="mb-1 container d-flex">
+            <p class="text-base sm:text-2xl shadows-into-light-two shadows-into-light-two-regular">Newly Added</p>
+            <span class="arrow-icon text-pink"><img src="client/img/Arrow_11.svg" alt=""></span>
+        </h4>
+        <div class="carousel-wrapper">
+            <div class="carousel-content">
+                <div class="card overlay-card">
+                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
+                         class="card-img-top" alt="Demo 1">
+                    <div class="card-body">
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
+                    </div>
+                </div>                               
+                <div class="card overlay-card">
+                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
+                         class="card-img-top" alt="Demo 1">
+                    <div class="card-body">
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
+                    </div>
+                </div> 
+                <div class="card overlay-card">
+                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
+                         class="card-img-top" alt="Demo 1">
+                    <div class="card-body">
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
+                    </div>
+                </div> 
+                <!-- Lặp lại để liền mạch -->
+                <div class="card overlay-card">
+                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
+                         class="card-img-top" alt="Demo 1">
+                    <div class="card-body">
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
+                    </div>
+                </div> 
+                <div class="card overlay-card">
+                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
+                         class="card-img-top" alt="Demo 1">
+                    <div class="card-body">
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
+                    </div>
+                </div> 
+                <div class="card overlay-card">
+                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
+                         class="card-img-top" alt="Demo 1">
+                    <div class="card-body">
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Demos -->
+    <section class="Featured py-5">
+        <div class="container text-center">
+            <img src="client/img/apple-touch-icon (1).webp" alt="">
+            <h2 class="mb-3 fw-bold">Featured Demos</h2>
+            
+            <!-- Tab buttons -->
+                <ul class="nav nav-pills mb-4 " id="demo-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="all-tab" data-bs-toggle="pill" href="#all">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="marketing-tab" data-bs-toggle="pill" href="#marketing">Marketing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sales-tab" data-bs-toggle="pill" href="#sales">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="customer-success-tab" data-bs-toggle="pill" href="#customer-success">Customer Success</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="revops-tab" data-bs-toggle="pill" href="#revops">RevOps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="cybersecurity-tab" data-bs-toggle="pill" href="#cybersecurity">Cybersecurity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="hr-tab" data-bs-toggle="pill" href="#hr">Human Resources</a>
+                    </li>
+                </ul>
+            
+
+            <!-- Tab content -->
+            <div class="tab-content" id="demo-tabs-content">
+                <!-- All -->
+                <div class="tab-pane fade show active" id="all">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary">View All Demos</a>
+                    </div>
+                </div>
+                
+                <!-- Marketing -->
+                <div class="tab-pane fade" id="marketing">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 filter-item Marketing">
+                            <a href="products-detail.html">
+                                <div class="card-tab rounded-4 shadow-sm">
+                                    <div class="card-body">
+                                        <img src="client/img/6sense_company_logo_174e2d301a.png" alt="6sense" class="img-fluid mb-3" style="max-height: 80px;">
+                                    </div>
+                                    <p class="badge">Marketing</p>
+                                </div>
+                                <h5 class="card-title">6sense</h5>
+                                <p class="card-text">Arm your revenue team with the data and visibility to close revenue.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary">View All Demos</a>
+                    </div>
+                </div>
+
+                <!-- Sales -->
+                <div class="tab-pane fade" id="sales">
+                    <div class="row gy-4">
+                       đang cập nhật
+                    </div>
+                </div>
+
+                <!-- Customer Success -->
+                <div class="tab-pane fade" id="customer-success">
+                    <div class="row gy-4">
+                        đang cập nhật
+                    </div>
+                </div>
+
+                <!-- RevOps -->
+                <div class="tab-pane fade" id="revops">
+                    <div class="row gy-4">
+                        đang cập nhật
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="tab-pane fade" id="cybersecurity">
+                    <div class="row gy-4">
+                        đang cập nhật
+                    </div>
+                </div>
+
+                <!-- Human Resources -->
+                <div class="tab-pane fade" id="hr">
+                    <div class="row gy-4">
+                        đang cập nhật
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Let’s get -->
+    <section class="Let-get">
+        <div class="container Let-get-row">
+            <div class="row align-items-center">
+                <div class="text-title col-md-7">
+                    <h1>Let’s get started with Dimmo today!</h1>
+                </div>
+                <div class="col-md-2 sign-up">
+                    <a href="#" class="btn btn-outline-dark w-100">Sign up</a>
+                </div>
+                <div class="col-md-3 register">
+                    <a href="#" class="btn btn-primary w-100">Register company</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events at Dimmo -->
+    <section class="Events">
+        <div class="container">
+            <div class="header">
+                <img src="client/img/apple-touch-icon (1).webp" alt="">
+                <h1>Events at Dimmo</h1>
+            </div>
+        
+            <div class="events-list">
+                <div class="d-flex justify-content-between align-content-center">
+                    <h2 class="section-title">Past Events</h2>
+                    <p class="date-header">June 5</p>
+                </div>
+        
+                <div class="event-item">
+                    <span class="event-time text-center">10:00 pm</span>
+                    <span class="event-title">The Great Database Debate</span>
+                </div>
+                <div class="event-item">
+                    <span class="event-time">9:50 pm</span>
+                    <span class="event-title">Emerging RevOps</span>
+                </div>
+                <div class="event-item">
+                    <span class="event-time">12:00 am</span>
+                    <span class="event-title">Customer Convos - Trellus</span>
+                </div>
+                <div class="event-item">
+                    <span class="event-time">9:30 pm</span>
+                    <span class="event-title">Customer Convos - RB2B</span>
+                </div>
+                <div class="event-item">
+                    <span class="event-time">11:00 pm</span>
+                    <span class="event-title">Customer Convos Episode 4: Arrows</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Nút "Back to Top" -->
+     <section class="Back">
+        <div class="container text-end">
+            <a href="#top" class="btn-back-to-top btn" aria-label="Back to Top">Back to top ↑</a>
+        </div>
+     </section>
+@endsection
