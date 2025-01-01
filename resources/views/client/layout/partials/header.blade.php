@@ -62,7 +62,26 @@
                         </svg>
                     </button>
                     <button class="btn btn-outline-pink me-2 btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Your Company</button>
-                    <button class="btn btn-pink btn-sm"  data-bs-toggle="modal" data-bs-target="#exampleModalSignIn">Sign In/Up</button>
+                    
+                    @if(Auth::check())
+                        <div class="dropdown">
+                            <button class="btn btn-pink btn-sm p-2 dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ Auth::user()->username }}
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item">Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    @else
+                        <button class="btn btn-pink btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModalSignIn">Sign In/Up</button>
+                    @endif
                 </div>
             </div>
         </div>

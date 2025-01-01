@@ -3,6 +3,7 @@
 <script src="client/js/js.js"></script>
 <script src="client/js/swiper-bundle.min.js"></script>
 <script src="client/js/js.js"></script>
+
 <script>
     document.querySelectorAll('.toggle-option').forEach(option => {
         option.addEventListener('click', () => {
