@@ -18,6 +18,15 @@ Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('regi
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
+// ===============================user========================================
+Route::get('/shop/category/{id}', [MasterController::class, 'shopByCategory'])->name('shop.category');
+Route::get('/product/{id}', [ProductController::class, 'show'])->name('product.show');
+
+
+
+
+// ==============================================================================
+
 // Protected Routes
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
@@ -37,13 +46,19 @@ Route::get('/admin', function () {
     Route::post('/users', [UserController::class, 'store'])->name('users.store');
     Route::patch('/users/{user}/toggle-status', [UserController::class, 'toggleStatus'])->name('users.toggle-status');
 
-Route::resource('categories', CategoryController::class);
-Route::resource('products', ProductController::class);
+// Route::resource('categories', CategoryController::class);
+Route::resource('categories', CategoryController::class)->except(['show']);
 
+Route::resource('products', ProductController::class)->except(['show']);
+//danh mục bị xóa
 Route::prefix('categories')->group(function () {
-    Route::get('/trashed', [CategoryController::class, 'trashed'])->name('category.trashed');
-    Route::post('/restore/{id}', [CategoryController::class, 'restore'])->name('category.restore');
+    Route::get('/trashed', [CategoryController::class, 'trashed'])->name('categories.trashed');
+    Route::post('/restore/{id}', [CategoryController::class, 'restore'])->name('categories.restore');
 });
+// sản phẩm bị xóa 
+// Trong file web.php
+Route::get('products/trashed', [ProductController::class, 'trashed'])->name('product.trashed');
+Route::post('products/restore/{id}', [ProductController::class, 'restore'])->name('product.restore');
 
 // Admin management routes
 Route::resource('admin-accounts', AdminAccountController::class);

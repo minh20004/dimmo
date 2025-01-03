@@ -16,7 +16,14 @@ class Product extends Model
         'video_demo',
         'thumbnail',
         'category_id',
-        'status'
+        'status',
+        'link_access', //Liên kết truy cập trang web
+        'link_faq', //link_cau_hoi
+        'link_call', //link_dat_cuoc
+        'link_download', //link_tai_xuong
+        'link_pricing', // link_gia_ca
+        'link_review' //link_danh_gia
+
     ];
 
     public function category()

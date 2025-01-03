@@ -45,7 +45,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <form action="{{ route('category.restore', $category->id) }}" method="POST" class="d-inline">
+                                        <form action="{{ route('categories.restore', $category->id) }}" method="POST" class="d-inline">
                                             @csrf
                                             <button type="submit" class="btn btn-success btn-sm" 
                                                 onclick="return confirm('Bạn có chắc chắn muốn khôi phục danh mục này không?')">
@@ -57,6 +57,8 @@
                                 @endforeach
                             </tbody>
                         </table>
+                        <a href="{{ route('categories.index') }}" class="btn btn-secondary">Quay lại</a>
+
                         {{ $categories->links() }}
                     </div>
                 </div>

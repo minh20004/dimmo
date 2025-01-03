@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class MasterController extends Controller
@@ -11,7 +13,15 @@ class MasterController extends Controller
      */
     public function client()
     {
-        return view('client.index');
+        $products = Product::where('status', 1) // Chỉ lấy sản phẩm có trạng thái kích hoạt
+                        ->select('name', 'thumbnail', 'link_access')
+                        ->take(6) // Giới hạn 6 sản phẩm
+                        ->get();
+        $categories = Category::with(['products' => function ($query) {
+            $query->take(6); // Lấy tối đa 6 sản phẩm
+        }])->get();
+
+    return view('client.index', compact('products', 'categories'));
     }
 
     /**

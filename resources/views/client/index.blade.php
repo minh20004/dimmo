@@ -123,55 +123,34 @@
         </h4>
         <div class="carousel-wrapper">
             <div class="carousel-content">
-                <div class="card overlay-card">
-                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
-                         class="card-img-top" alt="Demo 1">
-                    <div class="card-body">
-                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
+                @foreach($products as $product)
+                <a href="#" class="text-decoration-none">
+                    <div class="card overlay-card">
+                        <img src="{{ asset('storage/' . $product->thumbnail) }}" 
+                             class="card-img-top" alt="{{ $product->name }}">
+                        <div class="card-body">
+                            <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">{{ $product->name }}</h3>
+                        </div>
                     </div>
-                </div>                               
-                <div class="card overlay-card">
-                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
-                         class="card-img-top" alt="Demo 1">
-                    <div class="card-body">
-                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
-                    </div>
-                </div> 
-                <div class="card overlay-card">
-                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
-                         class="card-img-top" alt="Demo 1">
-                    <div class="card-body">
-                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
-                    </div>
-                </div> 
+                </a>
+                @endforeach
+                
                 <!-- Lặp lại để liền mạch -->
+                {{-- @foreach($products as $product) 
                 <div class="card overlay-card">
-                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
-                         class="card-img-top" alt="Demo 1">
+                    <img src="{{ asset('storage/' . $product->thumbnail) }}"
+                         class="card-img-top" alt="{{ $product->name }}">
                     <div class="card-body">
-                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
+                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">{{ $product->name }}</h3>
                     </div>
-                </div> 
-                <div class="card overlay-card">
-                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
-                         class="card-img-top" alt="Demo 1">
-                    <div class="card-body">
-                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
-                    </div>
-                </div> 
-                <div class="card overlay-card">
-                    <img src="https://www.dimmo.ai/_next/image?url=https%3A%2F%2Fimage.mux.com%2FMq1gH01MGWy02N4s2qGuXa5HrJbUZdnf01hcG9Ez2N2HvQ%2Fthumbnail.jpg&w=1920&q=75" 
-                         class="card-img-top" alt="Demo 1">
-                    <div class="card-body">
-                        <h3 class="jsx-3618494023 text-[12px] sm:text-[16px] font-[600] sm:font-bold text-white text-left">PartnerStack - Empowering Partner Success</h3>
-                    </div>
-                </div> 
+                </div>
+                @endforeach --}}
             </div>
         </div>
     </section>
     
     <!-- Featured Demos -->
-    <section class="Featured py-5">
+    {{-- <section class="Featured py-5">
         <div class="container text-center">
             <img src="client/img/apple-touch-icon (1).webp" alt="">
             <h2 class="mb-3 fw-bold">Featured Demos</h2>
@@ -402,7 +381,51 @@
                 </div>
             </div>
         </div>
+    </section> --}}
+    
+    <section class="Featured py-5">
+        <div class="container text-center">
+            <img src="{{ asset('client/img/apple-touch-icon (1).webp') }}" alt="">
+            <h2 class="mb-3 fw-bold">Featured Demos</h2>
+            
+            <!-- Tab buttons -->
+            <ul class="nav nav-pills mb-4" id="demo-tabs">
+                @foreach ($categories as $key => $category)
+                    <li class="nav-item">
+                        <a class="nav-link {{ $key == 0 ? 'active' : '' }}" data-bs-toggle="tab" href="#tab-{{ $category->id }}">{{ $category->name }}</a>
+                    </li>
+                @endforeach
+            </ul>
+            
+            <!-- Tab content -->
+            <div class="tab-content" id="demo-tabs-content">
+                @foreach ($categories as $key => $category)
+                    <div class="tab-pane fade {{ $key == 0 ? 'show active' : '' }}" id="tab-{{ $category->id }}">
+                        <div class="row">
+                            @foreach ($category->products->take(6) as $product)
+                                <div class="col-lg-4 col-md-6 col-sm-12 filter-item">
+                                    <a href="#">
+                                        <div class="card-tab rounded-4 shadow-sm">
+                                            <div class="card-body">
+                                                <img src="{{ asset('storage/' . $product->thumbnail) }}" alt="{{ $product->name }}" class="img-fluid mb-3" style="max-height: 80px;">
+                                            </div>
+                                            <p class="badge">{{ $category->name }}</p>
+                                        </div>
+                                        <h5 class="card-title text-start">{{ $product->name }}</h5>
+                                        <p class="card-text text-start">{{ $product->description }}</p>
+                                    </a>
+                                </div>
+                            @endforeach
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="{{ route('shop.category', $category->id) }}" class="btn btn-primary">Xem Thêm</a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
     </section>
+    
 
     <!-- Let’s get -->
     <section class="Let-get">

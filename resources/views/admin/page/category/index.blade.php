@@ -11,12 +11,17 @@
                 <div class="card">
                     <div class="card-header">
                         <a href="{{ route('categories.create') }}" class="btn btn-success float-right ml-2">Thêm mới</a>
-                        <a href="{{ route('category.trashed') }}" class="btn btn-warning float-right">Thùng rác</a>
+                        <a href="{{ route('categories.trashed') }}" class="btn btn-warning float-right">Thùng rác</a>
                     </div>
                     <div class="card-body">
                         @if (session('success'))
                             <div class="alert alert-success">
                                 {{ session('success') }}
+                            </div>
+                        @endif
+                        @if (session('error'))
+                            <div class="alert alert-danger">
+                                {{ session('error') }}
                             </div>
                         @endif
 
@@ -36,8 +41,6 @@
                                     <td>{{ $category->name }}</td>
                                     <td>{{ $category->description }}</td>
                                     <td>
-                                        {{-- <a href="{{ route('categories.show', $category->id) }}" 
-                                            class="btn btn-sm btn-primary">Chi tiết</a> --}}
                                         <a href="{{ route('categories.edit', $category->id) }}" 
                                             class="btn btn-sm btn-info">Sửa</a>
                                         <form action="{{ route('categories.destroy', $category->id) }}" 

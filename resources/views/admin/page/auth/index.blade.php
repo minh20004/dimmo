@@ -20,7 +20,7 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    <th>STT</th>
                                     <th>Tên</th>
                                     <th>Email</th>
                                     <th>Ngày tạo</th>
@@ -28,9 +28,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($admins as $admin)
+                                @foreach($admins as $index => $admin)
                                 <tr>
-                                    <td>{{ $admin->id }}</td>
+                                    <td>{{ $index + 1 }}</td>
                                     <td>{{ $admin->name }}</td>
                                     <td>{{ $admin->email }}</td>
                                     <td>{{ $admin->created_at->format('d/m/Y') }}</td>
